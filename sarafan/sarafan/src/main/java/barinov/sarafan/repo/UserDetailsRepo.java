@@ -1,4 +1,7 @@
 package barinov.sarafan.repo;
 
-public interface UserDetailsRepo {
+import barinov.sarafan.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserDetailsRepo extends JpaRepository<User, String> {
 }
